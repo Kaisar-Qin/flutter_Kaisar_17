@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class CustomCloneButton extends StatelessWidget {
   final IconData? icon;
+  final String? symbol;
   final Color iconColor;
   final String text;
   final bool centerText;
@@ -10,6 +11,7 @@ class CustomCloneButton extends StatelessWidget {
   const CustomCloneButton({
     super.key,
     this.icon,
+    this.symbol,
     this.iconColor = Colors.black,
     required this.text,
     this.centerText = false,
@@ -37,6 +39,16 @@ class CustomCloneButton extends StatelessWidget {
           children: [
             if (icon != null) ...[
               Icon(icon, color: iconColor, size: 22),
+              const SizedBox(width: 16),
+            ]else if (symbol != null) ...[
+              Text(
+                symbol!,
+                style: const TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
+              ),
               const SizedBox(width: 16),
             ],
             Text(

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// Reusable divider dengan teks "or" di tengah,
-/// pemisah antara opsi login sosial dan "Select account to log in".
 class CustomDivider extends StatelessWidget {
   const CustomDivider({super.key});
 
