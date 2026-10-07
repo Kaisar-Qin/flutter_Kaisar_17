@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       //home :KalkulatorPages(),
       title: 'My Learning App',
-      initialRoute: Routes.registration,
+      initialRoute: Routes.list_makanan,
       getPages: Routes.pages,
       theme: ThemeData(
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),

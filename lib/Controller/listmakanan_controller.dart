@@ -1,0 +1,12 @@
+import 'package:flutterproject/Models/makanan_model.dart';
+import 'package:get/get.dart';
+
+class ListMakananController extends GetxController{
+  List<MakananModel> listMakanan = [
+    MakananModel(namaMakanan: "Soto Ayam", hargaMakanan: "10.000", gambarMakanan: "https://awsimages.detik.net.id/community/media/visual/2019/11/29/c1da4697-6737-4e6f-9560-31363968faea.jpeg?w=600&q=90",deskripsiMakanan:"Soto ayam Kudus adalah makanan khas dari Kudus, Jawa Tengah, yang terkenal dengan kuah bening yang gurih, porsi mangkuk kecil, dan suwiran ayam kampung.",ratingMakanan:8,reviewMakanan:"Seger"),
+    MakananModel(namaMakanan: "Lentog", hargaMakanan: "8.000", gambarMakanan: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQopSIlpbzBZ13Bi13v2sYIOpSU6I_BjdcI4_dfBp4-YuYh2tcLFkpC1f4&s=10",deskripsiMakanan:"Lentog (atau lebih dikenal sebagai Lentog Tanjung) adalah makanan tradisional khas Kudus, Jawa Tengah, yang merupakan hidangan lontong sayur dengan cita rasa gurih, sedikit manis, dan legit.",ratingMakanan:6,reviewMakanan:"Enak"),
+    MakananModel(namaMakanan: "Pindang Kerbau", hargaMakanan: "20.000", gambarMakanan: "https://thumbs.tvonenews.com/thumbnail/2023/04/27/644a8e5011e00-nasi-pindang-kerbau-khas-kudus-jadi-buruan-pemudik_1265_711.jpg",deskripsiMakanan:"Pindang kerbau adalah kuliner tradisional khas Kudus, Jawa Tengah, berupa hidangan berkuah cokelat kaya rempah yang sekilas mirip dengan rawon.",ratingMakanan:5,reviewMakanan:"Pedas"),
+    MakananModel(namaMakanan: "Jenang", hargaMakanan: "10.000", gambarMakanan: "https://javanologi.uns.ac.id/wp-content/uploads/sites/26/2023/03/3347.png",deskripsiMakanan:"Jenang Kudus adalah makanan tradisional khas Kabupaten Kudus, Jawa Tengah, yang bertekstur kenyal, lembut, dan lengket dengan rasa yang manis legit",ratingMakanan:9,reviewMakanan:"Manis"),
+    MakananModel(namaMakanan: "Bolang Baling", hargaMakanan: "5.000", gambarMakanan: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5tlBh3xP0-iPpML0DkI1GBkJ45ZvBzQXNH2V6v2sOdh-oM5kCos1pxqo&s=10",deskripsiMakanan:"Bolang-baling adalah jenis roti goreng tradisional berbentuk kubus atau balok kecil yang mirip bantal, memiliki kulit luar renyah berwarna cokelat muda, dan bagian dalam yang kosong serta empuk.",ratingMakanan:10,reviewMakanan:"Gurih"),
+  ];
+}
