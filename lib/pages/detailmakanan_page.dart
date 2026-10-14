@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutterproject/Component/custom_text.dart';
 import 'package:flutterproject/Component/cutom_gambar_bulat.dart';
+import 'package:flutterproject/Controller/detailmakanan_controller.dart';
 import 'package:flutterproject/Models/makanan_model.dart';
 import 'package:get/get.dart';
 
 class DetailmakananPage extends StatelessWidget {
  DetailmakananPage({super.key});
 
-  final MakananModel makanan = Get.arguments as MakananModel;
+  final controller = Get.put(DetailmakananController());
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +25,6 @@ class DetailmakananPage extends StatelessWidget {
             child: Column(
               children:[
                 CustomGambarBulat(url: makanan.gambarMakanan, ukuran: 200),
-                SizedBox(height: 16),
                 SizedBox(height: 16),
                 CustomText(
                   nama: makanan.namaMakanan,

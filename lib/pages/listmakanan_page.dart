@@ -14,13 +14,23 @@ class ListmakananPage extends StatelessWidget {
     appBar:AppBar(title: Text("List Makanan"),),
     body: Container(
     margin: EdgeInsets.all(10),
-    child: ListView.builder(
+    child: Obx(() => 
+    ListView.builder(
       itemCount: controller.listMakanan.length,
       itemBuilder: (context, index){
         final makanan =controller.listMakanan[index];
-        return InkWell(
-          onTap: () {
-            Get.toNamed(
+         return Dismissible(
+                key: ValueKey(makanan.namaMakanan),
+                direction: DismissDirection.endToStart,
+                background: Container(
+                  color: Colors.red,
+                  alignment: Alignment.centerLeft,
+                  padding: const EdgeInsets.only(left: 20),
+                  child: const Icon(Icons.delete, color: Colors.white),
+                ),
+                child: InkWell(
+                onTap: () {
+               Get.toNamed(
               Routes.detail_makanan,
               arguments: makanan,
             );
@@ -31,9 +41,11 @@ class ListmakananPage extends StatelessWidget {
             subtitle: Text(makanan.hargaMakanan),
             trailing: Icon(Icons.arrow_back_ios)),
           ),
-        );
-    })
+          )
+         );
+        })
       )
-    );
+    )
+  );
   }
 }

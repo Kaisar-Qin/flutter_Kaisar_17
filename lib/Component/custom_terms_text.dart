@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// Reusable teks Terms of Service & Privacy Policy
-/// yang muncul di bagian bawah form login.
 class CustomTermsText extends StatelessWidget {
   const CustomTermsText({super.key});
 
