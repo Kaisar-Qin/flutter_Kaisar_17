@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutterproject/Component/custom_text.dart';
 import 'package:flutterproject/Component/cutom_gambar_bulat.dart';
 import 'package:flutterproject/Controller/detailmakanan_controller.dart';
-import 'package:flutterproject/Models/makanan_model.dart';
 import 'package:get/get.dart';
 
 class DetailmakananPage extends StatelessWidget {
@@ -24,14 +23,14 @@ class DetailmakananPage extends StatelessWidget {
               border: Border.all(color: Colors.black, width: 2)),
             child: Column(
               children:[
-                CustomGambarBulat(url: makanan.gambarMakanan, ukuran: 200),
+                CustomGambarBulat(url: controller.gambar, ukuran: 200),
                 SizedBox(height: 16),
                 CustomText(
-                  nama: makanan.namaMakanan,
-                  harga: makanan.hargaMakanan,
-                  rating: makanan.ratingMakanan,
-                  deskripsi: makanan.deskripsiMakanan,
-                  review: makanan.reviewMakanan,
+                  nama: controller.nama,
+                  harga: controller.harga,
+                  rating: controller.rating,
+                  deskripsi: controller.deskripsi,
+                  review: controller.review,
                 ),
                 ],
               ),

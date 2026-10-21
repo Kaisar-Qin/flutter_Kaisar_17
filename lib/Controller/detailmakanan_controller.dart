@@ -1,3 +1,4 @@
+import 'package:flutterproject/Models/makanan_model.dart';
 import 'package:get/get.dart';
 
 class DetailmakananController extends GetxController{
@@ -11,12 +12,12 @@ class DetailmakananController extends GetxController{
   @override
   void onInit() {
     super.onInit();
-    final argument = Get.arguments;
-    nama = argument['nama'];
-    harga = argument['harga'];
-    gambar = argument['gambar'];
-    deskripsi = argument['deskripsi'];
-    rating = argument['rating'];
-    review = argument['review'];
+    final MakananModel makanan = Get.arguments;
+    nama = makanan.namaMakanan;
+    harga = makanan.hargaMakanan;
+    gambar = makanan.gambarMakanan;
+    deskripsi = makanan.deskripsiMakanan;
+    rating = makanan.ratingMakanan;
+    review = makanan.reviewMakanan;
   }
 }
