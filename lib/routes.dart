@@ -2,6 +2,7 @@ import 'package:flutterproject/pages/confirmreg_page.dart';
 import 'package:flutterproject/pages/detailmakanan_page.dart';
 import 'package:flutterproject/pages/listmakanan_page.dart';
 import 'package:flutterproject/pages/mainmenu_page.dart';
+import 'package:flutterproject/pages/menu_drawer_page.dart';
 import 'package:flutterproject/pages/registration_page.dart';
 import 'package:get/get.dart';
 
@@ -12,6 +13,7 @@ class Routes {
   static const String list_makanan="/list_makanan";
   static const String detail_makanan="/detail_makanan";
   static const String main_menu="/main_menu";
+  static const String menu_drawer="/menu_drawer";
 
 
   static final pages =[
@@ -20,5 +22,6 @@ class Routes {
     GetPage(name: list_makanan, page: ()=>ListmakananPage()),
     GetPage(name: detail_makanan, page: ()=>DetailmakananPage()),
     GetPage(name: main_menu, page:() =>MainMenuPage()),
+    GetPage(name: menu_drawer, page:() =>MenuDrawerPage()),
   ];
 }
